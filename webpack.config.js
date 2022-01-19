@@ -21,7 +21,8 @@ module.exports = {
         rules: [
             {
                 test: /\.(ts|js)x?$/,
-                exclude: /(node_modules|bower_components)/,
+                // exclude: /(node_modules|bower_components)/,
+                include: /(node_modules\\@cfworker\\web|src)/,
                 loader: 'babel-loader',
                 options: {
                     presets: [
